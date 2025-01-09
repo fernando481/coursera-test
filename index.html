@@ -1,0 +1,115 @@
+<!Doctype html >
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    
+
+
+
+
+
+    <style>
+        
+#p{
+    color: black;
+}
+
+.center-text {
+  text-align: center;
+  color: gray;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+section {
+    position: relative;
+    padding: 20px;
+    background-color: gray;
+    border: 1px solid black;
+    margin-bottom: 20px;  
+}
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightgreen;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+section p {
+    margin-top: 40px;  
+}
+@media (min-width: 992px) {
+    .section {
+        width: 32%;  
+        float: left;  
+        margin-right: 2%;  
+    }
+
+    .section:last-child {
+        margin-right: 0; 
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 48%;  
+        float: left;  
+        margin-right: 4%; 
+    }
+
+    .section:last-child {
+        width: 100%;  
+        margin-right: 0; 
+        float: none;  
+    }
+}
+@media (max-width: 767px) {
+    .section {
+        width: 100%; 
+        margin-bottom: 20px;  
+        float: none;  
+    }
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class = "center-text"> 
+<h3> our Menu  </h3>
+</div>
+<section class="section">
+    <div class="section-title">Chicken</div>
+    <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quod maxime voluptatem ad ipsa officia molestias quas, doloribus, quidem vel consequuntur ratione dolorum quasi commodi impedit non, temporibus quibusdam alias?</p>
+</section>
+
+<section class="section">
+    <div class="section-title">Beef</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur ea deleniti eos, nobis ex ab itaque voluptatem repellendus voluptates, eligendi recusandae nemo cupiditate possimus consectetur hic dolor laboriosam quas assumenda?.</p>
+</section>
+<section class="section">
+    <div class="section-title">Sushi</div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, exercitationem. Mollitia odio similique praesentium impedit amet inventore, ullam ut corrupti commodi hic earum quibusdam. Rem totam cumque esse tenetur corrupti.</p>
+</section>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
